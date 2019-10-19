@@ -28,12 +28,20 @@ public class UserController {
         }
         return modelAndView;
     }
-
+    
     @GetMapping("/users/{username}")
     public ModelAndView userDetailsView(@PathVariable String username) {
         ModelAndView modelAndView = new ModelAndView("userDetails");
         modelAndView.addObject("user", userService.findUserByUserName(username));
         return modelAndView;
+    }
+
+    @GetMapping("/users/delete/{username}")
+    public String userDelete(@PathVariable String username) {
+        
+        userService.deleteUser(username);
+        
+        return "redirect:/users";
     }
     
     @GetMapping("/user/add")

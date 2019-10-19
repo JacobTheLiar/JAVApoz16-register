@@ -55,4 +55,12 @@ public class UserRepository{
             }
         }).map(User::getUsername).collect(Collectors.toSet());
     }
+    
+    
+    public void deleteUser(String username){
+        User user = findUserByUsername(username);
+        
+        users.remove(user);
+        
+    }
 }

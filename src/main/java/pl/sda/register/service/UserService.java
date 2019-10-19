@@ -32,4 +32,9 @@ public class UserService {
     public Set<String> findUsersByFirstName(String firstName, boolean matchExact){
         return userRepository.findUsersByFirstName(firstName, matchExact);
     }
+    
+    
+    public void deleteUser(String username){
+        userRepository.deleteUser(username);
+    }
 }

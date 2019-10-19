@@ -11,13 +11,15 @@
 		<thead>
 			<tr>
 				<th>Username</th>
+				<th colspan="2">options</th>
 			</tr>
 		</thead>
 
 		<c:forEach var="user" items="${users}">
 			<tr>
 				<td>${user}</td>
-				<td><a href="/users/${user}">Details</a></td>
+				<td><a href="/users/${user}">details</a></td>
+				<td><a href="/users/delete/${user}">delete</a></td>
 			</tr>
 		</c:forEach>
 	</table>
