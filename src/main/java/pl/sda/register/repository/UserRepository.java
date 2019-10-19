@@ -63,4 +63,11 @@ public class UserRepository{
         users.remove(user);
         
     }
+    
+    
+    public void updateUser(User user){
+        User oldUser = findUserByUsername(user.getUsername());
+        users.remove(oldUser);
+        users.add(user);
+    }
 }

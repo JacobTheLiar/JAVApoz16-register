@@ -11,7 +11,7 @@
 		<thead>
 			<tr>
 				<th>Username</th>
-				<th colspan="2">options</th>
+				<th colspan="3">options</th>
 			</tr>
 		</thead>
 
@@ -19,6 +19,7 @@
 			<tr>
 				<td>${user}</td>
 				<td><a href="/users/${user}">details</a></td>
+				<td><a href="/users/update/${user}">update</a></td>
 				<td><a href="/users/delete/${user}">delete</a></td>
 			</tr>
 		</c:forEach>
