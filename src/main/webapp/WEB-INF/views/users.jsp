@@ -25,5 +25,8 @@
 	<spring:url value="/user/add" var="addUserFormUrl" />
 	<button class="btn btn-primary" onclick="location.href='${addUserFormUrl}'">Add user</button>
 
+	<spring:url value="/user/search" var="searchUserFormUrl" />
+	<button class="btn btn-primary" onclick="location.href='${searchUserFormUrl}'">search user</button>
+
 </body>
 </html>

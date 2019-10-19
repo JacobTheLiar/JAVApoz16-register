@@ -7,9 +7,9 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
-@EnableWebMvc
-@Configuration
-@ComponentScan("pl.sda.register.controller")
+@EnableWebMvc //aktywacia spring web mvc
+@Configuration //zaznaczamy ze plik konfiguracyjny
+@ComponentScan("pl.sda.register.controller") //informacja o tym gdzi emasz szukać komponentów webowych
 public class WebConfig {
 
     @Bean
